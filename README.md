@@ -1,6 +1,6 @@
-# InstrcutZero: Efficient Instruction Optimization for Black-Box Large Language Models.
-
-## [Project page](https://lichang-chen.github.io/InstructZero/) | [Paper](https://arxiv.org/abs/2305.4926697)
+# AlpaGasus: Train a Better Alpaca Model with Fewer Data.
+Lichang Chen*, Shiyang Li*, Jun Yan, Hai Wang, Kalpa Gunaratna, Vikas Yadav, Zheng Tang, Vijay Srinivasan, Tianyi Zhou, Heng Huang, Hongxia Jin
+## [Project page](https://lichang-chen.github.io/AlpaGasus/) | [Paper](https://arxiv.org/abs/2305.4926697)
 
 
 If you find our paper useful, please consider citing:
