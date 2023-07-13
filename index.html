@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title> AlpaGasus: Train a Better Alpaca with Fewer Data </title>
+    <title> AlpaGasus: Training a Better Alpaca with Fewer Data </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -74,10 +74,10 @@ function trackLocation(e) {
 <div>
   <div class="section hero nerf-_v2 wf-section">
     <div class="container-2 nerf_header_v2 w-container">
-      <h1 class="nerf_title_v2" style="font-size: 3em">AlpaGasus: Train a Better Alpaca with Fewer Data </h1>
+      <h1 class="nerf_title_v2" style="font-size: 3em">AlpaGasus: Training a Better Alpaca with Fewer Data </h1>
     </br>
       <div class="nerf_authors_list_single w-row">
-        <div class="w-col w-col-1"><span class="text-span_nerf">1</span></div>
+        <!-- <div class="w-col w-col-1"><span class="text-span_nerf">1</span></div>
         <div class="w-col w-col-2 w-col-small-4 w-col-tiny-6"><a href="https://lichang-chen.github.io/" target="_blank"
           class="nerf_authors_v2">Lichang Chen<span class="text-span_nerf_star">*</span><span
             class="superscript text-span_nerf">1*</span></a></div>
@@ -113,40 +113,25 @@ function trackLocation(e) {
             class="nerf_authors_v2">Hongxia Jin<span class="text-span_nerf">1</span></a></div>
         <div class="nerf_authors_list_single w-row">
           <div class="w-col w-col-1"><span class="text-span_nerf">1</span></div>
-      </div>
+      </div> -->
 
-      <div class="nerf_authors_list_single nerf_authors_affiliation w-row">
-        <div class="w-col w-col-1">
-        </div>
-        <div class="w-col w-col-2">
-          <!-- <h1 class="nerf_affiliation_v2">Hong Kong Polytechnic University</h1> -->
-        </div>
-        <div class="w-col w-col-2">
-          <!-- <h1 class="nerf_affiliation_v2">University of Maryland</h1> -->
-        </div>
-        <div class="w-col w-col-2">
-          <!-- <h1 class="nerf_affiliation_v2">University of Texas at Austin</h1> -->
-        </div>
-        <div class="w-col w-col-2">
-          <!-- <h1 class="nerf_affiliation_v2">ByteDance</h1> -->
-        </div>
-        <div class="w-col w-col-2">
-          <!-- <h1 class="nerf_affiliation_v2">University of Texas at Austin</h1> -->
-        </div>
-        <div class="w-col w-col-1">
-        </div>
-      </div>
-      <div class="div-block-10">
+      <!-- <div class="div-block-10">
         <div class="nerf_equal_v2"><span class="text-span_nerf">*</span><span
             class="text-span_nerf_star">*</span>Denotes Equal Contribution</div>
-      </div>
+      </div> -->
 
-
-    <div class="btn-group" role="group" aria-label="Top menu">
+ 
+<div class="btn-group" role="group" aria-label="Top menu">
         <a class="btn btn-primary" href="http://arxiv.org/abs/2306.03082">Paper</a>
-        <!-- <a class="btn btn-primary" href="https://github.com/Lichang-Chen/InstructZero">Code</a> -->
-    </div>
+        <a class="btn btn-primary" href="https://github.com/Lichang-Chen/InstructZero">Code</a>
+        <a class="btn btn-primary" href="https://huggingface.co/">Model</a>
 </div>
+</div>
+
+
+
+
+
   <div style="text-align: center;">
     <img width=30% class="center" src="alpagasus.jpeg">
   </div>
@@ -155,77 +140,40 @@ function trackLocation(e) {
   <h2 align="left">Overview</h2>
   <hr>
 <div>
-  <p style="text-align: left;"> In this paper, we propose a simple and effective data selection strategy that automatically identifies and removes low-quality data using a strong LLM (e.g., ChatGPT). To this end, we introduce AlpaGasus, which is finetuned on only 9k high-quality data filtered from the 52k Alpaca data.
-    AlpaGasus significantly outperforms the original Alpaca as evaluated by GPT-4 on multiple test sets and its 13B variant could match >90% performance of its teacher LLM (i.e., Text-Davinci-003) on test tasks. It also provides 5.7x faster training, reducing the training time for a 7B variant from 80 minutes (for Alpaca) to 14 minutes.</p>
+  <p style="text-align: left;"> In this paper, we propose a simple and effective data selection strategy that automatically identifies and removes low-quality data using a strong LLM (e.g., ChatGPT). To this end, we introduce <b>AlpaGasus</b>, which is finetuned on only <b>9k high-quality data</b> filtered from the 52k Alpaca data.
+    AlpaGasus significantly outperforms the original Alpaca as evaluated by GPT-4 on multiple test sets and its 13B variant could match >90% performance of its teacher LLM (i.e., Text-Davinci-003) on test tasks. It also provides 5.7x faster training, reducing the training time for a 7B variant from 80 minutes (for Alpaca) to <b>14 minutes</b>.</p>
   <br>
   <div style="text-align: center;">
     <img width=50% class="center" src="elements/images/overview.svg">
 </div>
   <p style="text-align: center;"> Performance of AlpaGasus on four test sets when increasing its finetuning data, where the winning score is 
     \( \frac{ \text{#Win} - \text{#Lose}}{\text{#Testset}} + 1 \) 
-    with 
-    \( \text{#Testset = #Win + #Tie + #Lose} \)
-    to be the test set size and 
-    \( \text{#Win}/\text{#Tie}/\text{#Lose} \)
+    with #Testset = #Win + #Tie + #Lose to be the test set size and #win/#tie/#lose
     to be the number of samples on which \(\text{AlpaGasus}\) wins/draws/loses.</p>
   <br>
-  <div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Qgr4dcsY-60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </div>
-  <!-- <div>
-    <iframe width="80%" class="embedded-video-16-9" src="https://www.youtube.com/embed/Qgr4dcsY-60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div> -->
-<p style="text-align: left;"> Find the optimal instruction is extremely important for achieving the "charm", and this holds true for Large Language Models as well. ("Wingardium Leviosa" was a charm used to make objects fly, or levitate. If you are interested in "leviOsa", please check the video.) </p>
-
+  <p style="text-align: left;"> <b> TL;DR: </b> The first <b>automatic</b> framework to filter bad data in the IFT datasets. </p>
 <div class="section">
-  <h2 align="left">An application of InstructZero</h2>
+  <h2 align="left"> LLM-based Filtering </h2>
   <hr>
 <div>
 <div style="text-align: center;">
   <!-- <h5 align="center">Residual Error (x5)</h5> -->
-        <video class="video" autoplay="true" loop="true" style="margin-top: 0rem;" autoplay muted width="90%">
-          <source src="videos/iteration_v2.MP4">
-        </video>
-        <!-- <p style="margin-top: -5rem;" > <b>Left</b>: Soft prompts selected by InstructZero in three consecutive iterations (2D embedding by t-SNE). Colors denote different iterations and a larger circle refers to a higher objective value (zero-shot validation accuracy). Numbers highlight the best soft prompt per iteration. <b>Right</b>: instructions generated by the best soft prompt per iteration and the associated validation accuracy.  </p> -->
-      <p style="margin-top: 0rem;" > Given a few input-output exemplars for the task, InstructZero optimizes the instruction applied to a black-box LLM step by step (three optimization interations shown in the plot) with progressively improving accuracy.
+  <div style="text-align: center;">
+    <img width=90% class="center" src="elements/images/method.svg">
+    <p style="margin-top: 0rem;">  <b> Pipeline.</b> We prompt ChatGPT as our auto-grader to score each training triplet on a scale of 0 to 5. We then use exactly the same instruction fine-tuning script of Alpaca to train AlpaGasus on the filtered data with scores higher than a threshold.  </p>
+</div>
  </div>
-
-
-  <div class="section">
-    <h2 align="left">Abstract</h2>
-    <hr>
-  <div>
-
-  <p align="left">
-    Large language models(LLMs) are instruction followers, but it can be challenging to find the best instruction for different situations, 
-    especially for black-box LLMs on which backpropagation is forbidden. Instead of directly optimizing the discrete instruction, 
-    we optimize a low-dimensional soft prompt applied to an open-source LLM to generate the instruction for the black-box LLM. 
-    On each iteration of the proposed method, which we call InstructZero, a soft prompt is converted into an instruction using the open-source LLM, 
-    which is then submitted to the black-box LLM for zero-shot evaluation, and the performance is sent to Bayesian optimization to produce new soft prompts improving the zero-shot performance.
-    We evaluate InstructZero on different combinations of open-source LLMs and APIs including Vicuna and ChatGPT. 
-    Our results show that InstructZero outperforms SOTA auto-instruction methods across a variety of downstream tasks. 
-    <br>
-    <br>
-  <b> TL;DR: </b> The first framework to conduct instruction optimization for black-box LLM like ChatGPT, where Black-box API LLM <b>can only provide textual output</b>.
-  </p>
   <!-- <br>
   <br> -->
 
 
   <div class="section">
-    <h2 align="left">Method</h2>
-    <hr>
+    <h2 align="left">Score Distribution</h2>
     <div style="text-align: center;">
-      <img width=90% class="center" src="elements/images/teaser_v2.svg">
-      <p> <b>Pipeline of InstructZero.</b> On each iteration, a soft prompt and a few exemplars of the target task are sent to the open-source LLM for generating an instruction, which then prompts the black-box LLM to produce answers to target-task queries. The score (e.g., accuracy) of the answers and the soft prompt is added as new training data for BO, which updates its posterior about the objective and produces a new soft prompt to explore in the next iteration. Both LLMs are frozen. </p>
-    </div>  
-  <div>
-    <br>
-    <br>
-  <div style="text-align: center;">
-      <img width=90% class="center" src="elements/images/method_v1.svg">
-      <p>  <b> The pipeline of Bayesian optimization (BO) in InstructZero. </b> </p>
+      <img width=40% class="center" src="elements/images/scores.svg">
+      <p style="margin-top: 0rem;"> <b> Histogram of Scores. Threshold=4.5 </b>   </p>
   </div>
+  <div>
   <br>
   <br>
   <p align="left">
@@ -263,8 +211,8 @@ function trackLocation(e) {
       <p align="left">We evaluate InstructZero as a tool to find an instruction that steers a black-box LLM towards a desired downstream behavior on a target task, which also shows the potential of the InstructZero to <b> optimize a initially bad prompt and finally obtain a good prompt!</b>  </p>
     <br>
     <div style="text-align: center;">
-      <img width=100% class="center" src="elements/images/main_results.svg">
-      <p style="margin-top: -2rem;"> Zero-shot test accuracy on 32 tasks from BIG-Bench. InstructZero achieves<b> the best performance on all 32 out of 32 tasks </b> among the three evaluated approaches. </p>
+      <img width=100% class="center" src="elements/images/main_result.svg">
+      <p style="margin-top: -2rem;"> We show the main results here. </p>
     </div>
     <br>
     <br>
@@ -304,7 +252,7 @@ function trackLocation(e) {
   <div class="section">
     <h2 align="left">Future Work</h2>
     <hr>
-    <p align="left"> Though we could not provide the official code due to the company's poilicy. Thanks to <a href="https://github.com/gpt4life" target="_blank">@gpt4life</a> for reimplementing our models and ratings. </p>
+    <p align="left"> We could not release the official code due to the company's poilicy at this time. Thanks to <a href="https://github.com/gpt4life" target="_blank">@gpt4life</a> for reimplementing our models and ratings. </p>
   <br>
     <div class="section">
       <h3>Citation</h3>
