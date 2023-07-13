@@ -1,7 +1,7 @@
 <h1 align="center">AlpaGasus: Training a Better Alpaca Model with Fewer Data</h1>
-<h3 align="center"> Lichang Chen*, Shiyang Li*, Jun Yan, Hai Wang, Kalpa Gunaratna, Vikas Yadav, Zheng Tang, Vijay Srinivasan, Tianyi Zhou, Heng Huang, Hongxia Jin</h3>
+<h4 align="center"> Lichang Chen*, Shiyang Li*, Jun Yan, Hai Wang, Kalpa Gunaratna, Vikas Yadav, Zheng Tang, Vijay Srinivasan, Tianyi Zhou, Heng Huang, Hongxia Jin</h4>
 <br/>
-<center>*Denotes equal contribution</center> <br/>
+<h4 align="center"> *Denotes equal contribution</center> </h4>
 
 ## [Project page](https://lichang-chen.github.io/AlpaGasus/) | [Paper](https://arxiv.org/abs/2305.4926697)
 
