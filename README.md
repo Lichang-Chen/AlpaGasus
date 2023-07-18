@@ -23,8 +23,8 @@ If you find our paper useful, please consider citing:
 ```bibtex
 @article{chen2023alpagasus,
   title={AlpaGasus: Training a Better Alpaca with Fewer Data},
-  author={Chen, Lichang and Shiyang, Li, and, Jun, Yan },
-  journal={TBD},
+  author={Lichang Chen, Shiyang Li, Jun Yan, Hai Wang, Kalpa Gunaratna, Vikas Yadav, Zheng Tang, Vijay Srinivasan, Tianyi Zhou, Heng Huang, Hongxia Jin},
+  journal={arXiv preprint arXiv:2307.08701},
   year={2023}
 }
 ```
