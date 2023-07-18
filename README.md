@@ -2,7 +2,7 @@
 <h4 align="center"> Lichang Chen*, Shiyang Li*, Jun Yan, Hai Wang, Kalpa Gunaratna, Vikas Yadav, Zheng Tang, Vijay Srinivasan, Tianyi Zhou, Heng Huang, Hongxia Jin</h4>
 <h4 align="center"> *Denotes equal contribution</h4>
 
-## [Project page](https://lichang-chen.github.io/AlpaGasus/) | [Paper](https://arxiv.org/abs/2305.4926697)
+## [Project page](https://lichang-chen.github.io/AlpaGasus/) | [Paper](https://arxiv.org/abs/2307.08701)
 
 
 <p align="center">
