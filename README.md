@@ -14,9 +14,6 @@
 [2023.7] We release our paper. If you have any questions about our project, please send email to bobchen@umd.edu
 
 
-## Code Release
-We will officially release our code after the legal review is done by the company. Stay tuned!
-
 
 ## Citation
 If you find our paper useful, please consider citing:
