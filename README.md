@@ -12,7 +12,7 @@
 
 ## News
 - [2023.7] We release our paper. If you have any questions about our project, please send email to bobchen@umd.edu
-- [2023.9] Thanks to @[gauss5930](https://github.com/gauss5930) who implemented the QLoRA version of Alpagasus-7B and 13B, which could be run on the customer-level GPUs. please refer to their repo: [Alpagasus2-QLoRA](https://github.com/gauss5930/AlpaGasus2-QLoRA) They also show that tuning LLaMA-2 could achieve better performance.
+- [2023.9] Thanks to @[gauss5930](https://github.com/gauss5930) and @[YooYunS](https://github.com/YooYunS) who implemented the QLoRA version of Alpagasus-7B and 13B, which could be run on the customer-level GPUs. please refer to their repo: [Alpagasus2-QLoRA](https://github.com/gauss5930/AlpaGasus2-QLoRA) They also show that tuning LLaMA-2 could achieve better performance.
 
 
 
