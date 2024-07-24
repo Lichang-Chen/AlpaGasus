@@ -1,4 +1,4 @@
-<h1 align="center">AlpaGasus: Training a Better Alpaca Model with Fewer Data (ICLR 2024)</h1>
+<h1 align="center">AlpaGasus: Training a Better Alpaca with Fewer Data (ICLR 2024)</h1>
 <h4 align="center"> Lichang Chen*, Shiyang Li*, Jun Yan, Hai Wang, Kalpa Gunaratna, Vikas Yadav, Zheng Tang, Vijay Srinivasan, Tianyi Zhou, Heng Huang, Hongxia Jin</h4>
 <h4 align="center"> *Denotes equal contribution</h4>
 
