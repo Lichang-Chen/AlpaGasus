@@ -21,11 +21,11 @@
 If you find our paper useful, please consider citing:
 ```bibtex
 @inproceedings{
-chen2024alpagasus,
-title={AlpaGasus: Training a Better Alpaca with Fewer Data},
-author={Lichang Chen and Shiyang Li and Jun Yan and Hai Wang and Kalpa Gunaratna and Vikas Yadav and Zheng Tang and Vijay Srinivasan and Tianyi Zhou and Heng Huang and Hongxia Jin},
-booktitle={The Twelfth International Conference on Learning Representations},
-year={2024},
-url={https://openreview.net/forum?id=FdVXgSJhvz}
+    chen2024alpagasus,
+    title={AlpaGasus: Training a Better Alpaca with Fewer Data},
+    author={Lichang Chen and Shiyang Li and Jun Yan and Hai Wang and Kalpa Gunaratna and Vikas Yadav and Zheng Tang and Vijay Srinivasan and Tianyi Zhou and Heng Huang and Hongxia Jin},
+    booktitle={The Twelfth International Conference on Learning Representations},
+    year={2024},
+    url={https://openreview.net/forum?id=FdVXgSJhvz}
 }
 ```
